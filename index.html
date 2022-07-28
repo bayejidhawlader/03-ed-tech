@@ -23,7 +23,10 @@
 <body>
 
 
-    <!-- HEADER -->
+  <!-- HEADER -->
+  <header class="container">
+
+  </header>
     <nav class="navbar navbar-expand-lg py-4">
         <div class="container">
           <a class="navbar-brand fw-bold" href="#">Educational Website</a>
@@ -178,7 +181,7 @@
               </div>
 
               <!-- Course 04 -->
-              <div class="col-lg-6 col-md-12">
+              <div class="col-lg-6 col-md-12 d-none d-lg-block">
                 <div class="card mb-5 w-100">
                     <div class="row g-0">
                       <div class="col-md-4">
@@ -200,7 +203,7 @@
           <!-- Third Row -->
           <div class="row">
             <!-- Course 05 -->
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12 d-none d-lg-block">
                 <div class="card mb-5 w-100">
                     <div class="row g-0">
                       <div class="col-md-4">
@@ -218,7 +221,7 @@
             </div>
 
             <!-- Course 06 -->
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12 d-none d-lg-block">
               <div class="card mb-5 w-100">
                   <div class="row g-0">
                     <div class="col-md-4">
@@ -246,35 +249,41 @@
 
     <!-- READY TO JOIN -->
     <section class="container p-5 my-5 cyan-blue-bg rounded-2">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-lg-6 col-sm-12 text-white p-4">
-          <h1 class="fw-bold">Ready to join ?</h1>
-          <p>Online courses open the opportunity for learning to almost anyone, regardless of their scheduling commitments.</p>
+
+      <div class="row">
+        <div class="d-lg-flex justify-content-center align-items-center">
+          <div class="col-lg-6 text-center text-lg-start text-white p-4">
+            <h1 class="fw-bold">Ready to join ?</h1>
+            <p>Online courses open the opportunity for learning to almost anyone, regardless of their scheduling commitments.</p>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn bg-white cyan-blue-color fw-bold py-3 px-5">Register Now</button>
+          </div>
         </div>
-        <div class="col-lg-6 col-sm-12 text-end">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn bg-white cyan-blue-color fw-bold py-3 px-5">Register Now</button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Your Experience</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="No!"></button>
+            </div>
+            <div class="modal-body">
+              Did you like this job?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+              <button type="button" class="btn btn-primary">Yes! I Like it</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Your Experience</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="No!"></button>
-          </div>
-          <div class="modal-body">
-            Did you like this job?
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-            <button type="button" class="btn btn-primary">Yes! I Like it</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    
+
 
 
 
@@ -357,6 +366,30 @@
 
 
     <!-- TRUSRED COMPANIES -->
+    <section class="container my-5 d-none d-lg-block">
+      <div class="row align-items-center justify-content-center g-5">
+        <h2 class="text-center fw-bold">Trusted by over 800+ companies</h2>
+        <div class="col-lg-2 text-center col-md-12">
+          <img src="images/logo/company-1.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-2 text-center col-md-12">
+          <img src="images/logo/company-2.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-2 text-center col-md-12">
+          <img src="images/logo/company-3.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-2 text-center col-md-12">
+          <img src="images/logo/company-4.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-2 text-center col-md-12">
+          <img src="images/logo/company-5.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-2 text-center col-md-12">
+          <img src="images/logo/company-6.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </section>
+
 
 
 
@@ -377,7 +410,6 @@
         <a href="https://web.telegram.org/" class="mx-2" target="_blank"><i class="fa-brands fa-telegram text-white"></i></a>
       </div>
     </footer>
-
 
     <!-- Bootstrap Cdn Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
