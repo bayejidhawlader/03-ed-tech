@@ -1,0 +1,17 @@
+/* BODY DESIGN */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CAROUSEL */
+.custom-carousel{
+    top: 30%;
+}
+
+/* BACKGROUND COLOR */
+.cyan-blue-bg{
+    background-color: #289BDE;
+}
+.cyan-blue-color{
+    color: #289BDE;
+}
