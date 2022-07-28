@@ -5,13 +5,15 @@ body{
 
 /* CAROUSEL */
 .custom-carousel{
-    top: 30%;
+    top: 35%;
 }
 
 /* BACKGROUND COLOR */
 .cyan-blue-bg{
-    background-color: #289BDE;
+    background-color: #0d6efd;
 }
+
+/* TEXT COLOR */
 .cyan-blue-color{
-    color: #289BDE;
+    color: #0d6efd;
 }
