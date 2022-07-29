@@ -38,6 +38,9 @@ body{
     button.custom-carousel-btn {
       padding: 6px;
     }
+    .custom-carousel-icon{
+        display: none;
+    }
     
 }
 
