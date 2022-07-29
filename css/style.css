@@ -18,16 +18,35 @@ body{
     color: #0d6efd;
 }
 
-
-
-/* media Queries */
-@media only screen and (max-width: 767px) {
-    .custom-carousel h1 {
-        font-size: 16px;
+/* Responsive Media Mobile */
+@media only screen and (max-width: 576px) {
+    .custom-carousel{
+        top: -25%;
     }
-
+    .custom-carousel{
+      padding: 15%;
+      left: 0%;
+      right: 0%;
+    }
+    .custom-carousel h1 {
+      font-size: 14px;
+    }
     .custom-carousel p {
-        font-size: 12px;
-        margin-bottom: 5px;
+      font-size: 10px;
+      margin-bottom: 0;
+    }
+    button.custom-carousel-btn {
+      padding: 6px;
+    }
+    
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767.9px){
+    .custom-carousel{
+        top: 0%;
+    }
+    .custom-carousel h1 {
+        font-size: 26px;
+        margin-bottom: 15px;
     }
 }
